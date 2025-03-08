@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Assistant</title>
+
+    <link rel="icon" type="image/png" href="eww.png">
+    <link rel="stylesheet" href="css1.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body style="background-color: powderblue;">
+    <header>
+        <h1>Healthcare Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Your Health, Our Priority</h2>
+            <p>Providing compassionate and professional healthcare assistance.</p>
+            <a href="#services" class="cta-button">Learn More</a>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Personal Care</h3>
+                <p>Assistance with daily living activities.</p>
+            </div>
+            <div class="service">
+                <h3>Medication Management</h3>
+                <p>Ensuring proper medication administration.</p>
+            </div>
+            <div class="service">
+                <h3>Companionship</h3>
+                <p>Providing companionship and emotional support.</p>
+            </div>
+        </section>
+        
+    
+        <div class="container">
+            <h1>Application Form</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Health Information</legend>
+                    <h1>Medicine Recommendation System</h1>
+                    <label for="disease">Select a disease:</label>
+                    <select id="disease">
+                 <option value="Cold">Cold</option>
+                 <option value="Flu">Flu</option>
+                 <option value="Headache">Headache</option>
+                  <option value="Diabetes">Diabetes</option>
+                    </select>
+                  <button onclick="getMedicine()" formtarget="_top">Get Medicine</button>
+                <p id="medicines"></p>
+
+                </fieldset>
+            </form>
+    </main>
+   
+  document.body.appendChild(button);
+</script>
+
+
+    <footer>
+        <p>&copy; 20254 Healthcare Assistant. All rights reserved.</p>
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email: info@healthcareassistant.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
