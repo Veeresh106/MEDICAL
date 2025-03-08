@@ -26,15 +26,51 @@ function getMedicine() {
         <head>
             <title>Medicine Recommendation</title>
             <style>
-                body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-                h1 { color: #007BFF; }
+                body { 
+                    font-family: Arial, sans-serif; 
+                    text-align: center; 
+                    padding: 20px; 
+                    background-image: url('medico.jpg'); 
+                    background-size: cover;
+                }
+                h1 { 
+                    color: #007BFF; 
+                    font-size: 24px; 
+                }
+                p { 
+                    font-size: 18px; 
+                    color: #333; 
+                }
+                .container {
+                    background: rgba(255, 255, 255, 0.8);
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    display: inline-block;
+                    margin-top: 50px;
+                }
+                button {
+                    background-color: #007BFF;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                }
+                button:hover {
+                    background-color: #0056b3;
+                }
             </style>
         </head>
         <body>
-            <h1>Medicine Recommendation</h1>
-            <p><strong>Disease:</strong> ${disease}</p>
-            <p><strong>Recommended Medicine:</strong> ${medicine}</p>
-            <button onclick="window.close()">Close</button>
+            <div class="container">
+                <h1>Medicine Recommendation</h1>
+                <p><strong>Disease:</strong> ${disease}</p>
+                <p><strong>Recommended Medicine:</strong> ${medicine}</p>
+                <button onclick="window.close()">Close</button>
+            </div>
         </body>
         </html>
     `);
