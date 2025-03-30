@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Reference in CSS</title>
+    <style>
+        /* Named Colors */
+        .named-color {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Hexadecimal Colors */
+        .hex-color {
+            background-color: #00ff00;
+            color: #0000ff;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* RGB Colors */
+        .rgb-color {
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 0);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* RGBA Colors (with transparency) */
+        .rgba-color {
+            background-color: rgba(0, 0, 255, 0.5);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* HSL Colors */
+        .hsl-color {
+            background-color: hsl(120, 100%, 50%);
+            color: hsl(0, 100%, 50%);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* HSLA Colors (with transparency) */
+        .hsla-color {
+            background-color: hsla(240, 100%, 50%, 0.5);
+            color: hsla(60, 100%, 50%, 0.8);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* CurrentColor Keyword */
+        .current-color {
+            color: purple;
+            border: 2px solid currentColor;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Reference in CSS</h1>
+
+    <div class="named-color">
+        Named Color: Red background with white text.
+    </div>
+
+    <div class="hex-color">
+        Hexadecimal Color: Green background with blue text.
+    </div>
+
+    <div class="rgb-color">
+        RGB Color: Red background with yellow text.
+    </div>
+
+    <div class="rgba-color">
+        RGBA Color: Semi-transparent blue background with semi-transparent white text.
+    </div>
+
+    <div class="hsl-color">
+        HSL Color: Green background with red text.
+    </div>
+
+    <div class="hsla-color">
+        HSLA Color: Semi-transparent blue background with semi-transparent yellow text.
+    </div>
+
+    <div class="current-color">
+        CurrentColor Keyword: Purple text with a border using the currentColor.
+    </div>
+</body>
+</html>
